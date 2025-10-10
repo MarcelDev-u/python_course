@@ -1,5 +1,5 @@
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
+a: int = int(input("Enter first number: "))
+b: int = int(input("Enter second number: "))
 
 add = a + b
 diff = a - b
