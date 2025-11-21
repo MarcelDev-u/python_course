@@ -1,0 +1,1 @@
+To jest przykladowa zawartosc pliku tekstowego.
