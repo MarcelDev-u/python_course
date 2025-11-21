@@ -22,6 +22,15 @@ if any(S2.endswith(codon) for codon in stop_codony):
 else:
     print("Sekwencja nie konczy sie kodonem stop.")
 
+podsekwencja = S2[3:-3]
+print(f"Podsekwencja bez pierwszych i ostatnich 3 nukleotydow: {podsekwencja}")
+
+ma_cuc = "CUC" in S2
+print(f"Czy wystepuje CUC w S2? {ma_cuc}")
+
+kodony = [S2[i : i + 3] for i in range(0, len(S2), 3) if len(S2[i : i + 3]) == 3]
+print(f"Czy CUC wystepuje jako kodon? {'CUC' in kodony}")
+
 print("zad2")
 
 random.seed(42)
